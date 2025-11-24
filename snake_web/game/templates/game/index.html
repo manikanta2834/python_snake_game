@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game Extreme</title>
+    <link rel="stylesheet" href="{% static 'game/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="ui-layer">
+            <div id="start-screen" class="screen active">
+                <h1 class="glitch" data-text="SNAKE GAME">SNAKE GAME</h1>
+                <p class="blink">Press ENTER to Start</p>
+                <div id="high-scores-start">
+                    <h3>Top Scores</h3>
+                    <ul id="score-list-start"></ul>
+                </div>
+            </div>
+            <div id="game-over-screen" class="screen hidden">
+                <h1 class="danger">GAME OVER</h1>
+                <p id="final-score">Score: 0</p>
+                <p class="blink">Press R to Restart</p>
+            </div>
+            <div id="score-board">Score: <span id="score">0</span></div>
+            <button id="end-game-btn">End Game</button>
+        </div>
+    </div>
+    <script src="{% static 'game/script.js' %}"></script>
+</body>
+
+</html>
