@@ -34,25 +34,18 @@ This project is built with a robust stack of modern technologies:
     - **HTML5 Canvas API**: High-performance 2D graphics rendering.
     - **CSS3**: Advanced styling with flexbox, animations, and backdrop filters.
 
-## 📦 Installation & Run
+## 📋 Requirements
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/manikanta2834/python_snake_game.git
-   cd python_snake_game
-   ```
+- Python 3.x
+- Django
+- pygame (for desktop version)
 
-2. **Navigate to the web project**:
-   ```bash
-   cd snake_web
-   ```
-
-3. **Run the server**:
+4. **Run the server**:
    ```bash
    python manage.py runserver
    ```
 
-4. **Play**: Open your browser and visit `http://127.0.0.1:8000`.
+5. **Play**: Open your browser and visit `http://127.0.0.1:8000`.
 
 ---
 *Developed with ❤️ by Manikanta*
